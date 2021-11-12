@@ -2,8 +2,14 @@ const core = require('@actions/core');
 const github = require('@actions/github');
 
 async function run () {
+
+    console.log('TESTE', github)
     
-    console.log(github.context.payload.pull_request.head.hef)
+    console.log('CONTEXT', github.context)
+
+    console.log('PAYLOAD', github.context.payload)
+
+    console.log('4', github.context.payload.pull_request.head.hef)
 
     let nameBranch = core.getInput("DEFAULT_NAME_BRANCH")
 

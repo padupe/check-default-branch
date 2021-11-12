@@ -8446,8 +8446,14 @@ const core = __nccwpck_require__(5127);
 const github = __nccwpck_require__(3134);
 
 async function run () {
+
+    console.log('TESTE', github)
     
-    console.log(github.context.payload.pull_request.head.hef)
+    console.log('CONTEXT', github.context)
+
+    console.log('PAYLOAD', github.context.payload)
+
+    console.log('4', github.context.payload.pull_request.head.hef)
 
     let nameBranch = core.getInput("DEFAULT_NAME_BRANCH")
 
