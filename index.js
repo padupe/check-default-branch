@@ -13,7 +13,7 @@ async function run () {
 
     let nameBranch = core.getInput("DEFAULT_NAME_BRANCH")
 
-    if(github.context.payload.pull_request.head.ref == 'master') {
+    if(github.context.payload.pull_request.head.ref.startsWith(nameBranch)) {
         console.log('Foi seu Sacana!')
         core.setOutput("RESULT", 'Branch no Padrão.')
     } else {
