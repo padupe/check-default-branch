@@ -1,5 +1,5 @@
-name: "check-default-branch",
-description: "Check Default Branch",
+name: "check-default-branch"
+description: "Check Default Branch"
 inputs: 
   GITHUB_TOKEN:
     description: "GitHub Token"
