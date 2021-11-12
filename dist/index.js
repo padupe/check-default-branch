@@ -8447,11 +8447,11 @@ const github = __nccwpck_require__(3134);
 
 async function run () {
     
-    console.log(github.context.pull_request.head.hef)
+    console.log(github.context.payload.pull_request.head.hef)
 
     let nameBranch = core.getInput("DEFAULT_NAME_BRANCH")
 
-    if(github.context.pull_request.head.hef.startsWith(nameBranch)) {
+    if(github.context.payload.pull_request.head.hef.startsWith(nameBranch)) {
         console.log('Foi seu Sacana!')
         core.setOutput("RESULT", 'Branch no Padrão.')
     } else {
