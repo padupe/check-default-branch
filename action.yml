@@ -1,0 +1,14 @@
+name: "check-default-branch",
+description: "Check Default Branch",
+inputs: 
+  GITHUB_TOKEN:
+    description: "GitHub Token"
+  DEFAULT_NAME_BRANCH:
+    description: "Default Name Branch"
+    required: true
+outputs:
+  RESULT:
+    description: "Name Branch"
+runs:
+  using: "node12"
+  main: "dist/index.js"
