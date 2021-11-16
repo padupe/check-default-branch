@@ -1,0 +1,10 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: check-default-branch
+  annotations:
+    github.com/project-slug: padupe/check-default-branch
+spec:
+  type: other
+  lifecycle: unknown
+  owner: teste
